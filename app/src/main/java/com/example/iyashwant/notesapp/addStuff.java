@@ -77,6 +77,12 @@ public class addStuff extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent goToNextActivity = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(goToNextActivity);
+    }
 
     private void openDB()
     {

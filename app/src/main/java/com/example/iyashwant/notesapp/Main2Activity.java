@@ -1,5 +1,6 @@
 package com.example.iyashwant.notesapp;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -29,6 +30,14 @@ public class Main2Activity extends AppCompatActivity {
 
         updateTask();
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent goToNextActivity = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(goToNextActivity);
+    }
+
 
     private void openDB() {
         myDb = new DBAdapter(this);
@@ -98,6 +107,8 @@ public class Main2Activity extends AppCompatActivity {
         if(item_id==R.id.saveedit)
         {
             updateTasksave(id);
+            Intent goToNextActivity = new Intent(getApplicationContext(), MainActivity.class);
+            startActivity(goToNextActivity);
         }
 
 

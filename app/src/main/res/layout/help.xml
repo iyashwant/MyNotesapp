@@ -50,6 +50,16 @@
         android:textSize="25dp"
         android:layout_gravity="center"
         android:textColor="@color/blue"
-        android:text="Hope you like the app! :) "/>
+        android:text="Hope you like the app! :) \n "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:text=" App developer - Yashwant \n\ "
+        android:textSize="18dp"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"/>
 
 </LinearLayout>
